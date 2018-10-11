@@ -105,7 +105,7 @@
 */
 //#define LWIP_DEBUG                     1 //开启DEBUG选项
 
-#define ICMP_DEBUG                      LWIP_DBG_OFF //开启/关闭ICMPdebug
+#define ICMP_DEBUG                      LWIP_DBG_ON //LWIP_DBG_OFF //开启/关闭ICMPdebug
 
 #endif /* __LWIPOPTS_H__ */
 

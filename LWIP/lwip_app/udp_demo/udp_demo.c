@@ -54,8 +54,8 @@ void multicast_send_data(unsigned char * data,unsigned short len)
 {  
     struct pbuf *p = pbuf_alloc(PBUF_TRANSPORT,len, PBUF_RAM);  
     memcpy(p->payload, data, len);
-    //udp_sendto(udp_server_pcb, p,(struct ip_addr *) (&ipgroup),9999);  
-	udp_sendto(udp_server_pcb, p,(struct ip_addr *)("192.168.5.174"),8080);
+	IP4_ADDR(&ipgroup, 192,168,5,175);
+    udp_sendto(udp_server_pcb, p,(struct ip_addr *) (&ipgroup),8808);  
     pbuf_free(p);  
 }
 //UDP≤‚ ‘
